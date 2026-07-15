@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sell with us — Ideal Nest</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#FFFFFF',
+          ink: '#1A1E22',
+          navy: '#1C2B3E',
+          gold: '#C08A3E',
+          line: '#E4E1D8',
+          fade: '#7C7B72',
+        },
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          body: ['Poppins', 'sans-serif'],
+          mono: ['Poppins', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #FFFFFF; }
+  .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+  .hairline { border-color: #E4E1D8; }
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%237C7B72' stroke-width='1.3' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.2rem center;
+  }
+  .underline-grow {
+    background-image: linear-gradient(#1C2B3E, #1C2B3E);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.4s ease;
+  }
+  .underline-grow:hover { background-size: 100% 1px; }
+  .focus-ring:focus-visible { outline: 2px solid #1C2B3E; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-line">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 focus-ring">
+      <svg width="34" height="34" viewBox="0 0 40 40" class="shrink-0">
+        <circle cx="20" cy="20" r="19" fill="#1C2B3E"/>
+        <path d="M11 22 L20 13 L29 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 20 V28 H26 V20" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="18" y="22" width="4" height="6" fill="none" stroke="#C08A3E" stroke-width="1.2"/>
+      </svg>
+      <span class="font-display text-xl tracking-tight text-ink leading-none">Ideal Nest</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-10 label text-fade">
+      <a href="properties.html" class="underline-grow pb-1 hover:text-ink focus-ring">Properties</a>
+      <a href="sell.html" class="text-ink">Sell with us</a>
+      <a href="index.html#reviews" class="underline-grow pb-1 hover:text-ink focus-ring">Reviews</a>
+      <a href="index.html#contact" class="underline-grow pb-1 hover:text-ink focus-ring">Contact</a>
+    </nav>
+    <a href="properties.html" class="label border border-ink px-5 py-2.5 hover:bg-ink hover:text-paper transition-colors focus-ring">Browse listings</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 md:px-10 pt-40 pb-16">
+  <p class="label text-gold mb-6">List with Ideal Nest</p>
+  <h1 class="font-display font-light text-[11vw] md:text-[4.6rem] leading-[1.0] tracking-tight text-ink max-w-3xl">
+    Thinking of selling or renting out?
+  </h1>
+  <p class="text-fade text-base leading-relaxed max-w-md mt-8">
+    Tell us about the property once. We handle pricing guidance, listing it across Apartments, Villas, Rentals, Commercial, or Plots, buyer screening, and site visits — you deal with one point of contact, start to close.
+  </p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="max-w-6xl mx-auto px-6 md:px-10 py-16 border-t hairline">
+  <div class="grid sm:grid-cols-3 gap-10">
+    <div class="border-t hairline pt-5">
+      <h3 class="font-display text-lg mb-2">Tell us about it</h3>
+      <p class="text-fade text-sm leading-relaxed">Fill in the form below — type, location, and what you're expecting to sell or rent it for.</p>
+    </div>
+    <div class="border-t hairline pt-5">
+      <h3 class="font-display text-lg mb-2">We visit and verify</h3>
+      <p class="text-fade text-sm leading-relaxed">Our team walks the property, checks documentation, and agrees a listing price with you.</p>
+    </div>
+    <div class="border-t hairline pt-5">
+      <h3 class="font-display text-lg mb-2">We list and follow through</h3>
+      <p class="text-fade text-sm leading-relaxed">Your listing goes live under the right category, we screen enquiries, and manage visits until it closes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="max-w-6xl mx-auto px-6 md:px-10 py-16 border-t hairline">
+  <div class="grid md:grid-cols-5 gap-14">
+    <div class="md:col-span-2">
+      <h2 class="font-display text-2xl mb-4">Submit your property</h2>
+      <p class="text-fade text-sm leading-relaxed max-w-xs">
+        No fee to list an enquiry. We'll get in touch within a day to confirm details and schedule a visit.
+      </p>
+      <div class="mt-10 pt-10 border-t hairline label text-fade space-y-2">
+        <p>idealnest27@gmail.com</p>
+        <p>@idealnest.homesandproperties</p>
+      </div>
+    </div>
+
+    <form id="sellForm" class="md:col-span-3 space-y-6">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="label text-fade block mb-2" for="ownerName">Your name</label>
+          <input id="ownerName" required type="text" class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus:border-ink transition-colors focus-ring" />
+        </div>
+        <div>
+          <label class="label text-fade block mb-2" for="ownerPhone">Phone</label>
+          <input id="ownerPhone" required type="tel" class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus:border-ink transition-colors focus-ring" />
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="label text-fade block mb-2" for="dealType">Sell or rent</label>
+          <select id="dealType" class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus-ring">
+            <option>Sell</option>
+            <option>Rent out</option>
+          </select>
+        </div>
+        <div>
+          <label class="label text-fade block mb-2" for="propType">Property type</label>
+          <select id="propType" class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus-ring">
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Commercial</option>
+            <option>Plot</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="label text-fade block mb-2" for="location">Location</label>
+          <input id="location" type="text" placeholder="Area, city" class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus:border-ink transition-colors focus-ring" />
+        </div>
+        <div>
+          <label class="label text-fade block mb-2" for="expectedPrice">Expected price</label>
+          <input id="expectedPrice" type="text" placeholder="e.g. ₹85 L or ₹25,000/mo" class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus:border-ink transition-colors focus-ring" />
+        </div>
+      </div>
+
+      <div>
+        <label class="label text-fade block mb-2" for="details">Anything else we should know</label>
+        <textarea id="details" rows="4" placeholder="Size, BHK, condition, documents ready, ideal timeline..." class="w-full bg-transparent border-b hairline py-2.5 focus:outline-none focus:border-ink transition-colors resize-none focus-ring"></textarea>
+      </div>
+
+      <button type="submit" class="label bg-ink text-paper px-8 py-3.5 hover:bg-navy transition-colors focus-ring">
+        Submit property
+      </button>
+      <p id="formConfirm" class="label text-gold hidden">Thanks — we'll be in touch within a day.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t hairline">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="font-display text-lg">Ideal Nest</p>
+    <p class="label text-fade text-center">© 2026 Ideal Nest, Homes and Properties · Goa RERA Registered</p>
+    <a href="https://www.instagram.com/idealnest.homesandproperties" class="label underline-grow pb-1 hover:text-ink text-fade focus-ring">Instagram</a>
+  </div>
+</footer>
+
+<script>
+  // Placeholder submit handler — wire this to Sanity (via a small server function
+  // or a service like Formspree) to actually create a "sellerLead" document.
+  document.getElementById('sellForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('formConfirm').classList.remove('hidden');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
